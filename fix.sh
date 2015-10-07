@@ -4,6 +4,10 @@ do
 	do 
 		echo "#include \"inc$j.h\"" > util$j$i.c
 		echo "#include <stdio.h>" >> util$j$i.c
+		for k in {1..9}
+		do
+			echo "#include \"inc$j$k.h\"" >> util$j$i.c
+		done
 		echo "void util$j$i() { printf(\"util$j$i was here\\n\"); } " >> util$j$i.c
 	done
 done
