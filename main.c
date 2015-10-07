@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "incfile.h"
+//#include "incfile.h"
 extern void util();
 extern void foo();
 int main( int argc, const char* argv[] )
